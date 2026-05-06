@@ -27,7 +27,7 @@ st.set_page_config(page_title="CodeFather", page_icon="💷", layout="centered")
 st.title("CodeFather")
 st.markdown("Let's predict your salary 🤩")
 
-MODEL_DIR = r"C:\Users\ahmed\PycharmProjects\CodeFather\models"
+MODEL_DIR = os.path.join(os.path.dirname(__file__), "models")
 
 @st.cache_resource
 def load_models():
