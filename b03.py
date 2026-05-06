@@ -29,6 +29,7 @@ st.markdown("Let's predict your salary 🤩")
 
 MODEL_DIR = os.path.join(os.path.dirname(__file__), "models")
 
+
 @st.cache_resource
 def load_models():
     model_names = ["Logistic_Regression", "Decision_Tree",
